@@ -1,7 +1,7 @@
 # Python-calculator
 The Calculator is a program that allows you to perform basic arithmetic calculations and read equations from a file. With this program, you can easily perform addition, subtraction, multiplication, and division operations on two numbers.
 
-> **_Features_:**
+> **_**Features**_:**
 
 **-Perform arithmetic calculations**: Enter two numbers and an operation symbol (+, -, *, /), and the program will calculate the result for you.
 
