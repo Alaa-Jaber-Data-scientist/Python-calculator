@@ -1,4 +1,4 @@
-# This program allows the user to perform arithmetic operations on two numbers, and can also read in equations from a file.
+# This program allows the user to perform arithmetic operations on two numbers, and can also read equations from a file.
 
 # Provide information and introduce the program
 print("Welcome to The Calculator")
@@ -6,8 +6,8 @@ print("The Calculator can help you perform basic arithmetic calculations, such a
 print("To perform a calculation, enter two numbers and an operation symbol (+,-,*,/) and the program will calculate the result." )
 print("To read equations from a file, select option 2 from the menu and enter the file name.")
 
-# The program presents the user with a simple menu, and prompts the user for their choice. 
-# Depending on the user's choice, the program will either ask for two numbers and an operation, or read in equations from a file. 
+# The program presents the user with a simple menu and prompts the user for their choice. 
+# Depending on the user's choice, the program will either ask for two numbers and an operation or read equations from a file. 
 while True:    
     print("\nPlease choose What do you want to do:")
     print("\tEnter 1: for Calculating two numbers")
@@ -31,11 +31,11 @@ while True:
                 while True:
                     try:
                         # Loop the program till the user enter N 
-                        repeat = input("\nTo proceed enter\"y\". To go back to menue enter \"N\"? : ").lower()           
+                        repeat = input("\nTo proceed enter\"y\". To go back to menu enter \"N\"? : ").lower()           
                         if repeat == "y":
                             while True:
                                 try:
-                                    # Validate user input for first number
+                                    # Validate user input for the first number
                                     user_number1 = float(input("\tEnter the first number you'd like to calculate: "))
                                     
                                     # Validate user input for operation symbol
@@ -51,7 +51,7 @@ while True:
                                             print("Invalid operation symbol. Please enter a valid operation symbol using only +, -, *, or /.") 
                                             continue     
                                 
-                                # Validate user input for second number
+                                # Validate user input for the second number
                                     while True: 
                                         try:                            
                                             user_number2 = float(input("\tEnter the second number, please: "))
@@ -76,7 +76,7 @@ while True:
                                        
                                     print("\n\tThe calculation result is: ", calculation_result)
                                     
-                                    # Write equation to a file
+                                    # Write an equation to a file
                                     equation = str(user_number1) +" "+ user_operation +" "+ str(user_number2) +" "+ "=" +" "+ str(calculation_result)
                                     with open('calculation.txt', 'a') as file:
                                         file.write(equation + "\n")
@@ -93,7 +93,7 @@ while True:
                                 
                         
                     except Exception:
-                        print("please choose either \"Y\" or \"N\"") 
+                        print("Please choose either \"Y\" or \"N\"") 
                         continue
             
             
@@ -121,26 +121,3 @@ while True:
     except ValueError:  # Handle non-numeric input by the user
         print("\nPlease enter (1 or 2). Only numerical input is allowed.")
         continue
-                    
-    
-            
-            
-        
-    
-    
-            
-            
-
-
-                
-        
-
-
-
-
-
-
-
-
-        
-
